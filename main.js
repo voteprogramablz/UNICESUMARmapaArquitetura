@@ -1,6 +1,7 @@
 const button = document.querySelector("[data-btn]");
 const divColor = document.querySelector("#colorSelected");
 const hexaValue = document.querySelector("[data-hexa]");
+const binValue = document.querySelector("[data-bin]");
 
 function handleSubmit(event) {
   event.preventDefault();
@@ -17,8 +18,14 @@ function handleSubmit(event) {
 
   if (hexa === "NAN") {
     hexaValue.innerText = "";
+  } else if (hexa.length === 2) {
+    alert("Binário inválido");
+    binValue.innerText = `A sua cor em binário é: ${binaryDigit}`;
+    hexaValue.innerText = `A sua cor em hexadecimal é: #${hexa}`;
   } else {
+    console.log(hexa.length);
     divColor.style.background = `#${hexa}`;
+    binValue.innerText = `A sua cor em binário é: ${binaryDigit}`;
     hexaValue.innerText = `A sua cor em hexadecimal é: #${hexa}`;
   }
 }
