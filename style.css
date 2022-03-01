@@ -70,3 +70,27 @@ input {
 .verify:hover {
   cursor: pointer;
 }
+
+@media (max-width:1400px) {
+  .formWrapper {
+    width: 35vw;
+  }
+}
+
+@media (max-width:1180px) {
+  .formWrapper {
+    width: 50vw;
+  }
+}
+
+@media (max-width:770px) {
+  .formWrapper {
+    width: 65vw;
+  }
+}
+
+@media (max-width:580px) {
+  .formWrapper {
+    width: 80vw;
+  }
+}
