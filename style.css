@@ -86,6 +86,7 @@ input {
 @media (max-width:770px) {
   .formWrapper {
     width: 65vw;
+    height: 85vh;
   }
 }
 
