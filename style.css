@@ -34,7 +34,7 @@ input {
   flex-direction: column;
   height: 65vh;
   width: 30vw;
-  flex-wrap: wrap;
+  flex-wrap: no-wrap;
   align-items: center;
   justify-content: center;
   background-color: #d8d8d8;
