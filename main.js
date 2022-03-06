@@ -6,15 +6,16 @@ const binValue = document.querySelector("[data-bin]");
 function handleSubmit(event) {
   event.preventDefault();
   const inputRA = document.querySelector("#ra");
-  const RAEighthCharactere = inputRA.value[6];
+  const RASeventhCharactere = inputRA.value[6];
 
   if (!inputRA.value.trim()) {
     alert("Insira seu RA");
     return;
   }
 
-  const binaryDigit = checkBinaryValue(+RAEighthCharactere);
-  const hexa = parseInt(binaryDigit, 2).toString(16).toUpperCase();
+  const binaryDigit = checkBinaryValue(+RASeventhCharactere);
+
+  const hexa = Number.parseInt(binaryDigit, 2).toString(16).toUpperCase();
 
   if (hexa === "NAN") {
     hexaValue.innerText = "";
